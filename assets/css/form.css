@@ -1,1 +1,14 @@
-!
+body {
+  background-color: beige;
+}
+
+.header {
+  display: flex;
+  background-color: aqua;
+  flex-direction: row;
+  display: flex;
+  gap: 2%;
+  padding: 1%;
+  margin: 1%;
+  border-style: 5px solid black;
+}
