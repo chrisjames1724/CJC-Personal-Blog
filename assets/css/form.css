@@ -10,5 +10,6 @@ body {
   gap: 2%;
   padding: 1%;
   margin: 1%;
-  border-style: 5px solid black;
+  border: 5px solid black;
 }
+
