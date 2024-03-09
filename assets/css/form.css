@@ -1,5 +1,6 @@
 body {
   background-color: beige;
+  border: solid 2px black;
 }
 
 .header {
@@ -10,6 +11,22 @@ body {
   gap: 2%;
   padding: 1%;
   margin: 1%;
-  border: 5px solid black;
+  border: 2px solid black;
 }
 
+.col-1 {
+  display: flex;
+  width: 45%;
+  border: solid 2px black;
+}
+
+.col-2 {
+  display: flex;
+  width: 45%;
+  border: solid 2px black;
+}
+
+section {
+  display: flex;
+  padding: 1%;
+}
