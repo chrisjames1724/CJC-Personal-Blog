@@ -1,22 +1,38 @@
 body {
   background-color: beige;
-}
-
-.section h1 {
-  border-bottom: black;
-  border-width: 3px;
-}
-
-.section-1 {
-  border-bottom: black;
-  border-width: 3px;
-  color: blue;
-  font-size: 14px;
-}
-.header {
-  border: solid 3px black;
-}
-
-h1 {
   border: solid 2px black;
+}
+
+.header {
+  display: flex;
+  padding: 5px;
+  border: solid 2px black;
+  margin: 2px;
+}
+
+h2 {
+  display: flex;
+  border-bottom: solid 1px black;
+  margin: 10px;
+}
+
+section {
+  border: solid 2px black;
+  margin: 2px;
+}
+
+p {
+  display: flex;
+  justify-content: left;
+}
+
+footer {
+  border: solid 1px black;
+  margin: 2px;
+}
+
+h3 {
+  display: flex;
+  border-bottom: solid 1px black;
+  margin: 10px;
 }
