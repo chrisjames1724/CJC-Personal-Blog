@@ -27,8 +27,15 @@
 
         <article class="col-2">
             <h3> Whats on your mind? </h3>
-            <form action=""></form>
-            <button>submit</button>
+            <form action="/action_page.php" id="blogForm">
+                <label for="Username">Username</label><br>
+                <input type="text" id="Username" name="Username" value=""><br>
+                <label for=" Title">Title:</label><br>
+                <input type="text" id="Title" name="Title" value=""><br><br>
+                <label for="Content"> Content:</label><br>
+                <input type="text" id="Content">
+                <input type="submit" value="Submit">
+            </form>
 
         </article>
 
@@ -40,9 +47,7 @@
 
 
 
-
-
-    <script src=".assets/js/script.js"></script>
+    <script src="assets/js/form.js"> </script>
 </body>
 
 </html>
