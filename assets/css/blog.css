@@ -13,7 +13,7 @@ body {
 h2 {
   display: flex;
   border-bottom: solid 1px black;
-  margin: 10px; 
+  margin: 10px;
 }
 
 section {
@@ -35,4 +35,9 @@ h3 {
   display: flex;
   border-bottom: solid 1px black;
   margin: 10px;
+}
+
+.header ul button {
+  display: flex;
+  justify-content: right;
 }

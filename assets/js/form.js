@@ -8,7 +8,7 @@ blogForm.addEventListener("submit", (e) => {
   let content = document.getElementById("Content");
 
   if (username.value == "" || title.value == "" || content.value == "") {
-    alert("Ensure you input a value in allfields!");
+    alert("Ensure you input a value in all fields!");
   } else {
     // perform operation with form input
     alert("This form has been successfully submitted!");
@@ -21,8 +21,8 @@ blogForm.addEventListener("submit", (e) => {
     title: title.value,
     content: content.value,
   };
-  localStorage.clear();
-  let numberOfBlogs = localStorage.length;
+  // localStorage.clear();
+  // let numberOfBlogs = localStorage.length;
   // Adding new blog
   localStorage.setItem("blog" + numberOfBlogs, JSON.stringify(blog));
   let storedBlog = localStorage.getItem("blog" + numberOfBlogs);
