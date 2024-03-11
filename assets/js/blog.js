@@ -3,7 +3,7 @@ for (let counter = 0; counter < numberOfBlogs; counter++) {
   let blogPost = JSON.parse(localStorage.getItem("blog" + counter));
   console.log(blogPost);
   let newBlogPost =
-    "<section> <h2 class=&quot;section1&quot;>" +
+    "<section> <h2" +
     blogPost.title +
     "</h2><p>" +
     blogPost.content +
