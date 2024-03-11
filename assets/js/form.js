@@ -15,32 +15,34 @@ blogForm.addEventListener("submit", (e) => {
     console.log(
       `This form has a username of ${username.value} a title of ${title.value} and I content ${content.value}`
     );
+    let blog = {
+      username: username.value,
+      title: title.value,
+      content: content.value,
+    };
+    // localStorage.clear();
+    let numberOfBlogs = localStorage.length;
+    // Adding new blog
+    localStorage.setItem("blog" + numberOfBlogs, JSON.stringify(blog));
+    let storedBlog = localStorage.getItem("blog" + numberOfBlogs);
+    console.log(JSON.parse(storedBlog));
+    console.log(localStorage);
+    // Format content into a JSON Object to put in local storage
+
+    window.open("./blog.html");
   }
-  let blog = {
-    username: username.value,
-    title: title.value,
-    content: content.value,
-  };
-  // localStorage.clear();
-  // let numberOfBlogs = localStorage.length;
-  // Adding new blog
-  localStorage.setItem("blog" + numberOfBlogs, JSON.stringify(blog));
-  let storedBlog = localStorage.getItem("blog" + numberOfBlogs);
-  console.log(JSON.parse(storedBlog));
-  console.log(localStorage);
-  // Format content into a JSON Object to put in local storage
 });
 
 const lightDarkEl = $("#lightdark-btn");
-let isDark = true;
+let isDark = false;
 
 lightDarkEl.on("click", function () {
   if (isDark) {
     //selecting element of body calling the css file, use css selectors to select DOM elements
-    $("body").css({ "background-color": "#d9e9e8", color: "#1a1a1a" });
+    $("body").css({ "background-color": "#ffffff", color: "#1a1a1a" });
     isDark = !isDark;
   } else {
-    $("body").css({ "background-color": "#1a1a1a", color: "#d9e9e8" });
+    $("body").css({ "background-color": "#1a1a1a", color: "#ffffff" });
     isDark = !isDark;
   }
 });

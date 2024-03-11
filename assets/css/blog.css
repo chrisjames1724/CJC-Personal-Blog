@@ -1,5 +1,5 @@
 body {
-  background-color: beige;
+  background-color: white;
   border: solid 2px black;
 }
 
@@ -11,7 +11,6 @@ body {
   border: solid 2px black;
   margin: 2px;
 }
-
 
 h2 {
   display: flex;
