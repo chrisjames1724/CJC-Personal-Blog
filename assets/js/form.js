@@ -13,7 +13,7 @@ blogForm.addEventListener("submit", (e) => {
     // perform operation with form input
     alert("This form has been successfully submitted!");
     console.log(
-      `This form has a username of ${username.value} a title of ${title.value} and I content ${content.value}`
+      `This form has a username of ${username.value} a title of ${title.value} and a content ${content.value}`
     );
     let blog = {
       username: username.value,
