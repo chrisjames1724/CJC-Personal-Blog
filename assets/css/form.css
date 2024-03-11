@@ -1,11 +1,10 @@
 body {
-  background-color: beige;
+  background-color: white;
   border: solid 2px black;
 }
 
 .header {
   display: flex;
-  background-color: beige;
   flex-direction: row;
   display: flex;
   gap: 2%;
@@ -20,6 +19,7 @@ body {
   border: solid 2px black;
   flex-direction: column;
   padding-left: 20%;
+  margin: 2px;
 }
 
 .col-2 {
@@ -29,12 +29,13 @@ body {
   flex-direction: column;
   padding-left: 20%;
   padding-bottom: 15%;
+  margin: 2px;
 }
 
 section {
   display: flex;
   padding: 1%;
-  height: 500px;
+  height: 625px;
 }
 
 #blogForm {
@@ -52,15 +53,21 @@ article {
 }
 
 img {
-  height: 75%;
+  height: 60%;
   display: flex;
   width: 55%;
-  border-radius: 15%;
+  border-radius: 12%;
 }
 
 h2 {
   justify-content: center;
 }
 
-#content {
+input #content {
+  height: 35px;
+  font-size: 30px;
+}
+
+label #content {
+  font-size: 28px;
 }

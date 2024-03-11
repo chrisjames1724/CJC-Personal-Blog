@@ -5,10 +5,13 @@ body {
 
 .header {
   display: flex;
+  flex-direction: row;
+  justify-content: right;
   padding: 5px;
   border: solid 2px black;
   margin: 2px;
 }
+
 
 h2 {
   display: flex;
@@ -37,7 +40,7 @@ h3 {
   margin: 10px;
 }
 
-.header ul button {
+.header button {
   display: flex;
   justify-content: right;
 }
