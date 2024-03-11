@@ -1,7 +1,15 @@
 let blogForm = document.getElementById("blogForm");
 
+function readFromStorage() {
+  const blogData = localStorage.getItem("blog");
+  const data = JSON.parse(blogData);
+  return data || [];
+}
+
 blogForm.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  const storageData = readFromStorage(); //[]
 
   let username = document.getElementById("Username");
   let title = document.getElementById("Title");
@@ -20,13 +28,15 @@ blogForm.addEventListener("submit", (e) => {
       title: title.value,
       content: content.value,
     };
+
+    // storageData.push(blog);
     // localStorage.clear();
     let numberOfBlogs = localStorage.length;
     // Adding new blog
     localStorage.setItem("blog" + numberOfBlogs, JSON.stringify(blog));
-    let storedBlog = localStorage.getItem("blog" + numberOfBlogs);
-    console.log(JSON.parse(storedBlog));
-    console.log(localStorage);
+    // let storedBlog = localStorage.getItem("blog");
+    // console.log(JSON.parse(storedBlog));
+    // console.log(localStorage);
     // Format content into a JSON Object to put in local storage
 
     window.open("./blog.html");
