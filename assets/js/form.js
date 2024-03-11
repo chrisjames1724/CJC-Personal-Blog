@@ -29,11 +29,11 @@ blogForm.addEventListener("submit", (e) => {
       content: content.value,
     };
 
-    // storageData.push(blog);
+    storageData.push(blog);
     // localStorage.clear();
-    let numberOfBlogs = localStorage.length;
+
     // Adding new blog
-    localStorage.setItem("blog" + numberOfBlogs, JSON.stringify(blog));
+    localStorage.setItem("blog", JSON.stringify(storageData));
     // let storedBlog = localStorage.getItem("blog");
     // console.log(JSON.parse(storedBlog));
     // console.log(localStorage);
