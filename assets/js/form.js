@@ -41,8 +41,10 @@ lightDarkEl.on("click", function () {
     //selecting element of body calling the css file, use css selectors to select DOM elements
     $("body").css({ "background-color": "#ffffff", color: "#1a1a1a" });
     isDark = !isDark;
+    lightDarkEl.html("☀️");
   } else {
     $("body").css({ "background-color": "#1a1a1a", color: "#ffffff" });
     isDark = !isDark;
+    lightDarkEl.html("🌙");
   }
 });
