@@ -12,6 +12,10 @@ body {
   margin: 2px;
 }
 
+.header h1 {
+  padding-right: 75%;
+}
+
 h2 {
   display: flex;
   border-bottom: solid 1px black;

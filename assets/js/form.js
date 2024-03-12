@@ -6,6 +6,7 @@ function readFromStorage() {
   return data || [];
 }
 
+//This is the function which is used to store the inputs of username, contnet and blog title into local storage. This also has alerts for submitting data prompting you fill in all fields or validating that the submoission was correct and redirects you to the blog page.
 blogForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -34,18 +35,17 @@ blogForm.addEventListener("submit", (e) => {
 
     // Adding new blog
     localStorage.setItem("blog", JSON.stringify(storageData));
-    // let storedBlog = localStorage.getItem("blog");
-    // console.log(JSON.parse(storedBlog));
-    // console.log(localStorage);
-    // Format content into a JSON Object to put in local storage
 
+    //Opens the blog page
     window.open("./blog.html");
   }
 });
 
+////setting up a constant whihch will be used in the light/dark button function
 const lightDarkEl = $("#lightdark-btn");
 let isDark = false;
 
+// function which makes the light and dark modes turn on and off
 lightDarkEl.on("click", function () {
   if (isDark) {
     //selecting element of body calling the css file, use css selectors to select DOM elements
